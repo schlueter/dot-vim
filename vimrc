@@ -8,40 +8,44 @@ call plug#begin()
 
   Plug 'airblade/vim-gitgutter'
   Plug 'vim-airline/vim-airline'
-  Plug 'bling/vim-bufferline'
+  Plug 'vim-airline/vim-airline-themes'
+"  Plug 'bling/vim-bufferline'
 
   Plug 'junegunn/goyo.vim',      {'on': 'Goyo'}
   Plug 'junegunn/limelight.vim', {'on':  'Limelight'}
 
-  "Plug 'fholgado/minibufexpl.vim'
   Plug 'AnsiEsc.vim'
   Plug 'ConradIrwin/vim-bracketed-paste'
-  Plug 'Glench/Vim-Jinja2-Syntax'
 
   Plug 'junegunn/rainbow_parentheses.vim'
-  Plug 'kchmck/vim-coffee-script'
   Plug 'navicore/vissort.vim'
+
+  Plug 'Glench/Vim-Jinja2-Syntax'
+  Plug 'kchmck/vim-coffee-script'
   Plug 'nginx.vim'
   Plug 'pearofducks/ansible-vim'
   Plug 'rooprob/vim-behave'
   Plug 'schlueter/ruby.vim'
   Plug 'schlueter/zsh-ft.vim'
-  Plug 'scrooloose/syntastic'
   Plug 'suan/vim-instant-markdown'
   Plug 'vim-scripts/bats.vim'
+  Plug 'vimperator/vimperator.vim'
+
+  Plug 'scrooloose/syntastic'
+
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-git'
 
   Plug 'tmux-plugins/vim-tmux'
 
+  Plug 'valloric/YouCompleteMe'
+
   Plug 'tpope/vim-commentary', {'on': '<Plug>Commentary'}
   Plug 'tpope/vim-endwise'
-  Plug 'tpope/vim-fugitive'
-  Plug 'tpope/vim-git'
   Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-tbone'
-  Plug 'valloric/YouCompleteMe'
   Plug 'vim-scripts/ReplaceWithRegister'
-  Plug 'vimperator/vimperator.vim'
 
   if v:version >= 703
     "Plug 'junegunn/vim-after-object'
@@ -66,22 +70,15 @@ set modelines=10
 set listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
 set spell spelllang=en_us
 set ttymouse=xterm2 mouse=a
-" Remove trailing whitespace
 
 autocmd BufWritePre * :%s/\s\+$//e
-" mouse
 
 nnoremap <Leader>s :set nospell<CR>
 nnoremap <Leader>q :MBEToggle<CR>
 nnoremap <Leader>l :SyntasticToggleMode<CR>
 
-" Diff of current state and current saved state
 map <F2> :w !diff '%' -<CR>
-
-" Sudo save
 cmap w!! w !sudo tee % >/dev/null
-
-",/ turns off search highlighting
 nmap ,/ :nohlsearch<CR>
 
 " Shortcut buffer switching to # \ where # in 1..99
@@ -102,7 +99,8 @@ endtry
 " Airline Theme
 let g:airline_inactive_collapse=1
 let g:airline_powerline_fonts=1
-let g:airline_exclude_filenames = ['MiniBufExplorer']
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='solarized'
 
 " Limelight
 let g:limelight_conceal_ctermfg = 240
@@ -117,21 +115,19 @@ function! s:goyo_enter()
   set noshowmode
   set noshowcmd
   set scrolloff=999
-  MBEClose
 endfunction
 
 function! s:goyo_leave()
-  silent !tmux set status on
-  silent !tmux list-panes -F '\#F' | grep -q Z && tmux resize-pane -Z
-  set showmode
-  set showcmd
-  set scrolloff=5
   highlight StatusLineNC ctermbg=none
   highlight StatusLine   ctermbg=none
   highlight VertSplit    ctermbg=none
   highlight NonText      ctermbg=none
   highlight Normal       ctermbg=none
-  MBEOpen
+  silent !tmux set status on
+  silent !tmux list-panes -F '\#F' | grep -q Z && tmux resize-pane -Z
+  set showmode
+  set showcmd
+  set scrolloff=5
 endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
