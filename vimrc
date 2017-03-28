@@ -9,12 +9,12 @@ call plug#begin()
   Plug 'airblade/vim-gitgutter'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
-"  Plug 'bling/vim-bufferline'
 
   Plug 'junegunn/goyo.vim',      {'on': 'Goyo'}
   Plug 'junegunn/limelight.vim', {'on':  'Limelight'}
 
   Plug 'AnsiEsc.vim'
+
   Plug 'ConradIrwin/vim-bracketed-paste'
 
   Plug 'junegunn/rainbow_parentheses.vim'
@@ -68,16 +68,14 @@ set clipboard=unnamedplus
 set expandtab tabstop=2 shiftwidth=2
 set modelines=10
 set listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
-set spell spelllang=en_us
 set ttymouse=xterm2 mouse=a
 
 autocmd BufWritePre * :%s/\s\+$//e
 
-nnoremap <Leader>s :set nospell<CR>
-nnoremap <Leader>q :MBEToggle<CR>
-nnoremap <Leader>l :SyntasticToggleMode<CR>
-
 map <F2> :w !diff '%' -<CR>
+map <F4> :setlocal spell! spelllang=en_us<CR>
+map <F5> :SyntasticToggleMode<CR>
+
 cmap w!! w !sudo tee % >/dev/null
 nmap ,/ :nohlsearch<CR>
 
