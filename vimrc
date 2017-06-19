@@ -64,7 +64,7 @@ set hidden
 set hlsearch incsearch showmatch
 set nobackup noswapfile
 set pastetoggle=<F3>
-set clipboard=unnamedplus
+set clipboard=unnamed
 set expandtab tabstop=2 shiftwidth=2
 set modelines=10
 set listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
@@ -74,7 +74,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 map <F2> :w !diff '%' -<CR>
 map <F4> :setlocal spell! spelllang=en_us<CR>
-map <F5> :SyntasticToggleMode<CR>
+map <F5> :SyntasticCheck<CR>
 
 cmap w!! w !sudo tee % >/dev/null
 nmap ,/ :nohlsearch<CR>
@@ -140,8 +140,10 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 " Linter Customizations
-let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_checkers = []
+let g:syntastic_python_pylint_args='-f parseable -r n'
 let g:syntastic_python_flake8_args = "--ignore=E402,F403,E501,E302,F811"
+let g:syntastic_sh_shellcheck_args = "-x"
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
@@ -180,4 +182,3 @@ highlight StatusLine ctermbg=none
 highlight VertSplit ctermbg=none
 highlight NonText ctermbg=none
 highlight Normal ctermbg=none
-
