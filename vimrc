@@ -6,6 +6,8 @@ call plug#begin()
 
   Plug 'junegunn/seoul256.vim'
 
+  Plug 'johngrib/vim-game-code-break'
+
   Plug 'airblade/vim-gitgutter'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
@@ -47,6 +49,10 @@ call plug#begin()
   Plug 'tpope/vim-tbone'
   Plug 'vim-scripts/ReplaceWithRegister'
 
+  Plug 'eagletmt/neco-ghc'
+  Plug 'eagletmt/ghcmod-vim'
+  Plug 'Shougo/vimproc.vim'
+
   if v:version >= 703
     "Plug 'junegunn/vim-after-object'
   endif
@@ -67,7 +73,7 @@ set pastetoggle=<F3>
 set clipboard=unnamed
 set expandtab tabstop=2 shiftwidth=2
 set modelines=10
-set listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
+set list listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
 set ttymouse=xterm2 mouse=a
 
 autocmd BufWritePre * :%s/\s\+$//e
@@ -140,10 +146,11 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 " Linter Customizations
-let g:syntastic_python_checkers = []
+let g:syntastic_sh_shellcheck_args = "-x"
+let g:syntastic_python_checkers = ['pyflakes']
 let g:syntastic_python_pylint_args='-f parseable -r n'
 let g:syntastic_python_flake8_args = "--ignore=E402,F403,E501,E302,F811"
-let g:syntastic_sh_shellcheck_args = "-x"
+let g:syntastic_python_pyflakes_args = "--ignore=E402,F403,E501,E302,F811"
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
@@ -174,6 +181,9 @@ function! TextEnableCodeSnip(filetype,start,end,textSnipHl) abort
   \ start="'.a:start.'" end="'.a:end.'"
   \ contains=@'.group
 endfunction
+
+" YCM
+let g:ycm_server_python_interpreter = '/usr/bin/python2.7'
 
 " This has to be after something or it gets overridden
 " Let background transparency work
