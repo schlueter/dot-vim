@@ -1,6 +1,7 @@
 function! s:isAnsible()
   let filepath = expand("%:p")
   let filename = expand("%:t")
+  if filename =~ '\v/*.py' | return 0 | en
   if filepath =~ '\v/(tasks|roles|handlers)/.*\.ya?ml$' | return 1 | en
   if filepath =~ '\v/(playbooks|ansible)/' | return 1 | en
 
