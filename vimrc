@@ -74,7 +74,7 @@ set clipboard=unnamed
 set expandtab tabstop=2 shiftwidth=2
 set modelines=10
 set list listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
-set ttymouse=xterm2 mouse=a
+"set ttymouse=xterm2 mouse=a
 
 autocmd BufWritePre * :%s/\s\+$//e
 
