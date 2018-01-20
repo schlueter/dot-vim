@@ -49,6 +49,7 @@ call plug#begin()
   Plug 'tpope/vim-tbone'
   Plug 'vim-scripts/ReplaceWithRegister'
 
+  Plug 'hsanson/vim-android'
   Plug 'eagletmt/neco-ghc'
   Plug 'eagletmt/ghcmod-vim'
   Plug 'Shougo/vimproc.vim'
