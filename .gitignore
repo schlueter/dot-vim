@@ -1,3 +1,4 @@
 /backup/
 /plugged/
-.netrwhist
+/venv/
+/.netrwhist

@@ -184,7 +184,7 @@ function! TextEnableCodeSnip(filetype,start,end,textSnipHl) abort
 endfunction
 
 " YCM
-let g:ycm_server_python_interpreter = $HOME . '/.config/zsh/pyenv/versions/3.6.3/bin/python'
+let g:ycm_server_python_interpreter = $HOME . '/.vim/venv/bin/python'
 
 " This has to be after something or it gets overridden
 " Let background transparency work
