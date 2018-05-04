@@ -77,8 +77,8 @@ set modelines=10
 set list listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
 "set ttymouse=xterm2 mouse=a
 
-hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+highlight CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+highlight CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
 autocmd BufWritePre * :%s/\s\+$//e
