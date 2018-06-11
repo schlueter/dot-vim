@@ -1,5 +1,3 @@
-set nocompatible
-
 call plug#begin()
 
   Plug 'bluz71/vim-moonfly-colors'
@@ -50,4 +48,10 @@ call plug#begin()
   Plug 'eagletmt/ghcmod-vim'
   Plug 'Shougo/vimproc.vim'
 
+  if v:version >= 703
+    "Plug 'junegunn/vim-after-object'
+  endif
+
 call plug#end()
+
+
