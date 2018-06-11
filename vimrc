@@ -4,9 +4,7 @@ set nocompatible
 
 call plug#begin()
 
-  Plug 'junegunn/seoul256.vim'
-
-  Plug 'johngrib/vim-game-code-break'
+  Plug 'bluz71/vim-moonfly-colors'
 
   Plug 'airblade/vim-gitgutter'
   Plug 'vim-airline/vim-airline'
@@ -62,6 +60,8 @@ call plug#end()
 
 filetype plugin on
 filetype plugin indent on
+
+colorscheme moonfly
 
 set laststatus=2
 set wrap linebreak
