@@ -1,9 +1,11 @@
-set nocompatible
-
 call plug#begin()
 
+  " colorscheme plugins
   Plug 'bluz71/vim-moonfly-colors'
+  Plug 'sjl/badwolf'
+  Plug 'altercation/vim-colors-solarized'
 
+  " Others
   Plug 'airblade/vim-gitgutter'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
@@ -13,7 +15,6 @@ call plug#begin()
 
   Plug 'AnsiEsc.vim'
 
-  Plug 'ConradIrwin/vim-bracketed-paste'
 
   Plug 'junegunn/rainbow_parentheses.vim'
   Plug 'navicore/vissort.vim'
@@ -36,7 +37,7 @@ call plug#begin()
 
   Plug 'tmux-plugins/vim-tmux'
 
-  Plug 'valloric/YouCompleteMe'
+  Plug 'valloric/YouCompleteMe', { 'do': './install.py' }
 
   Plug 'tpope/vim-commentary', {'on': '<Plug>Commentary'}
   Plug 'tpope/vim-endwise'
@@ -51,3 +52,5 @@ call plug#begin()
   Plug 'Shougo/vimproc.vim'
 
 call plug#end()
+
+filetype plugin indent on
