@@ -2,7 +2,7 @@ syntax enable
 set background=dark
 colorscheme badwolf
 
-let g:default_colorscheme = 'solarized'
+let g:default_colorscheme = 'moonfly'
 let g:python_colorscheme = 'badwolf'
 
 try
