@@ -1,14 +1,14 @@
-function OnBufEnter()
+function s:OnBufEnter()
     if (exists("g:python_colorscheme"))
         execute "colorscheme " . g:python_colorscheme
     endif
 endfunction
 
-function OnBufLeave()
+function s:OnBufLeave()
     if (exists("g:default_colorscheme"))
         execute "colorscheme " . g:default_colorscheme
     endif
 endfunction
 
-au BufEnter * call OnBufEnter()
-au BufLeave * call OnBufLeave()
+au BufEnter * call s:OnBufEnter()
+au BufLeave * call s:OnBufLeave()

@@ -11,12 +11,12 @@ set hlsearch
 set incsearch
 set showmatch
 set laststatus=2
-set list listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
+set nolist listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
 set nobackup noswapfile
 set pastetoggle=<F3>
 set undolevels=1000
 
-"set visualbell noerrorbells
+set visualbell errorbells
 set wrap
 set linebreak
 set breakindent
