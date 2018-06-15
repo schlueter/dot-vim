@@ -32,6 +32,7 @@ call plug#begin()
   Plug 'suan/vim-instant-markdown'
   Plug 'vim-scripts/bats.vim'
   Plug 'vimperator/vimperator.vim'
+  Plug 'digitalrounin/vim-yaml-folds'
 
   Plug 'scrooloose/syntastic'
 
@@ -74,7 +75,8 @@ set pastetoggle=<F3>
 set clipboard=unnamed
 set expandtab tabstop=2 shiftwidth=2
 set modelines=10
-set list listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
+set nolist listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
+set foldlevel=3
 "set ttymouse=xterm2 mouse=a
 
 highlight CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
@@ -88,6 +90,7 @@ map <F4> :setlocal spell! spelllang=en_us<CR>
 map <F5> :SyntasticCheck<CR>
 
 cmap w!! w !sudo tee % >/dev/null
+cmap Xa xa
 nmap ,/ :nohlsearch<CR>
 
 " Shortcut buffer switching to # \ where # in 1..99
@@ -189,6 +192,28 @@ endfunction
 
 " YCM
 let g:ycm_server_python_interpreter = $HOME . '/.vim/venv/bin/python'
+
+command! -complete=shellcmd -nargs=+ Shell call s:RunShellCommand(<q-args>)
+function! s:RunShellCommand(cmdline)
+  echo a:cmdline
+  let expanded_cmdline = a:cmdline
+  for part in split(a:cmdline, ' ')
+     if part[0] =~ '\v[%#<]'
+        let expanded_part = fnameescape(expand(part))
+        let expanded_cmdline = substitute(expanded_cmdline, part, expanded_part, '')
+     endif
+  endfor
+  botright new
+  setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nowrap
+  call setline(1, 'You entered:    ' . a:cmdline)
+  call setline(2, 'Expanded Form:  ' .expanded_cmdline)
+  call setline(3,substitute(getline(2),'.','=','g'))
+  execute '$read !'. expanded_cmdline
+  setlocal nomodifiable
+  1
+endfunction
+
+command! -complete=file -nargs=* Flake8 call s:RunShellCommand('flake8 '.<q-args>)
 
 " This has to be after something or it gets overridden
 " Let background transparency work
