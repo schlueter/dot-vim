@@ -1,10 +1,10 @@
-function s:OnBufEnter()
+function! s:OnBufEnter()
     if (exists("g:python_colorscheme"))
         execute "colorscheme " . g:python_colorscheme
     endif
 endfunction
 
-function s:OnBufLeave()
+function! s:OnBufLeave()
     if (exists("g:default_colorscheme"))
         execute "colorscheme " . g:default_colorscheme
     endif
