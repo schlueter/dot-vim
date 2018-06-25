@@ -31,6 +31,7 @@ call plug#begin()
   Plug 'rooprob/vim-behave'
   Plug 'schlueter/ruby.vim'
   Plug 'schlueter/zsh-ft.vim'
+  " TODO requires `npm -g install instant-markdown-d`
   Plug 'suan/vim-instant-markdown'
   Plug 'vim-scripts/bats.vim'
   Plug 'vimperator/vimperator.vim'
