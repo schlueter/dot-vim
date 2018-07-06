@@ -23,17 +23,4 @@ set breakindent
 set breakindentopt=shift:1
 let &showbreak = '⏎  '
 
-highlight CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-highlight CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-
-noremap <C-n> :bn<CR>
-noremap <C-p> :bp<CR>
-noremap <Leader>c :set cursorline! cursorcolumn!<CR>
-noremap <F2> :w !diff '%' -<CR>
-" F4 to toggle spellcheck
-noremap <F4> :setlocal spell! spelllang=en_us<CR>
-noremap <F5> :SyntasticCheck<CR>
-noremap <Leader>, :nohlsearch<CR>
-cnoremap w!! w !sudo tee % >/dev/null
-
 autocmd BufWritePre * :%s/\s\+$//e
