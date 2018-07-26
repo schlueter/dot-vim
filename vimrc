@@ -12,6 +12,7 @@ call plug#begin()
   Plug 'eagletmt/ghcmod-vim'
   Plug 'Glench/Vim-Jinja2-Syntax'
   Plug 'kchmck/vim-coffee-script'
+  Plug 'ekalinin/Dockerfile.vim'
 
   " Workflow plugins
   Plug 'airblade/vim-gitgutter'
