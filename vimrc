@@ -13,6 +13,7 @@ call plug#begin()
   "Plug 'Glench/Vim-Jinja2-Syntax'
   "Plug 'kchmck/vim-coffee-script'
   Plug 'ekalinin/Dockerfile.vim'
+  Plug 'smerrill/vcl-vim-plugin'
 
   " Workflow plugins
   Plug 'airblade/vim-gitgutter'
@@ -34,7 +35,7 @@ call plug#begin()
   " TODO requires `npm -g install instant-markdown-d`
   Plug 'suan/vim-instant-markdown'
 
-  "Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-git'
 
   Plug 'tmux-plugins/vim-tmux'
