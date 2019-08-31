@@ -2,3 +2,4 @@
 /plugged/
 /venv/
 /.netrwhist
+/autoload/plug.vim*

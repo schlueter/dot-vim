@@ -10,13 +10,11 @@ call plug#begin()
   Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
   Plug 'eagletmt/neco-ghc'
   Plug 'eagletmt/ghcmod-vim'
-  "Plug 'Glench/Vim-Jinja2-Syntax'
-  "Plug 'kchmck/vim-coffee-script'
+  Plug 'Glench/Vim-Jinja2-Syntax'
+  Plug 'dense-analysis/ale'
+  Plug 'Glench/Vim-Jinja2-Syntax'
   Plug 'ekalinin/Dockerfile.vim'
   Plug 'smerrill/vcl-vim-plugin'
-
-  " Workflow plugins
-  Plug 'airblade/vim-gitgutter'
 
   " Vim experience plugins
   Plug 'vim-airline/vim-airline'
@@ -32,23 +30,26 @@ call plug#begin()
   "Plug 'rooprob/vim-behave'
   Plug 'schlueter/ruby.vim'
   Plug 'schlueter/zsh-ft.vim'
-  " TODO requires `npm -g install instant-markdown-d`
-  Plug 'suan/vim-instant-markdown'
+  Plug 'suan/vim-instant-markdown', {'do': 'npm -g install instant-markdown-d'}
+  Plug 'vim-scripts/bats.vim'
+  Plug 'vimperator/vimperator.vim'
 
+  " Workflow plugins
+  Plug 'airblade/vim-gitgutter'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-git'
 
   Plug 'tmux-plugins/vim-tmux'
 
-  "Plug 'tpope/vim-commentary', {'on': '<Plug>Commentary'}
-  "Plug 'tpope/vim-endwise'
-  "Plug 'tpope/vim-repeat'
-  "Plug 'tpope/vim-surround'
-  "Plug 'tpope/vim-tbone'
-  "Plug 'vim-scripts/ReplaceWithRegister'
+  Plug 'tpope/vim-commentary', {'on': '<Plug>Commentary'}
+  Plug 'tpope/vim-endwise'
+  Plug 'tpope/vim-repeat'
+  Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-tbone'
+  Plug 'vim-scripts/ReplaceWithRegister'
 
-  "Plug 'hsanson/vim-android'
-  "Plug 'Shougo/vimproc.vim'
+  Plug 'hsanson/vim-android'
+  Plug 'Shougo/vimproc.vim'
 
 call plug#end()
 
