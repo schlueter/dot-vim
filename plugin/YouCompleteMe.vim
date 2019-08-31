@@ -1,2 +1,1 @@
-" YCM
-let g:ycm_server_python_interpreter = $HOME . '/.vim/venv/bin/python'
+let g:ycm_server_python_interpreter = $HOME . '/.vim/plugged/YouCompleteMe/venv/bin/python'
