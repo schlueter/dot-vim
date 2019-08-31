@@ -21,13 +21,12 @@ call plug#begin()
   Plug 'vim-airline/vim-airline-themes'
   Plug 'junegunn/goyo.vim', {'on': 'Goyo'}
   Plug 'junegunn/limelight.vim', {'on':  'Limelight'}
-  Plug 'AnsiEsc.vim'
+  Plug 'valloric/YouCompleteMe'
+  Plug 'vim-scripts/AnsiEsc.vim'
   Plug 'junegunn/rainbow_parentheses.vim'
-  "Plug 'scrooloose/syntastic'
 
-  Plug 'nginx.vim'
+  Plug 'vim-scripts/nginx.vim'
   Plug 'pearofducks/ansible-vim'
-  "Plug 'rooprob/vim-behave'
   Plug 'schlueter/ruby.vim'
   Plug 'schlueter/zsh-ft.vim'
   Plug 'suan/vim-instant-markdown', {'do': 'npm -g install instant-markdown-d'}
@@ -50,6 +49,9 @@ call plug#begin()
 
   Plug 'hsanson/vim-android'
   Plug 'Shougo/vimproc.vim'
+
+  "Plug 'scrooloose/syntastic'
+  "Plug 'rooprob/vim-behave'
 
 call plug#end()
 
