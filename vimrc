@@ -21,7 +21,7 @@ call plug#begin()
   Plug 'vim-airline/vim-airline-themes'
   Plug 'junegunn/goyo.vim', {'on': 'Goyo'}
   Plug 'junegunn/limelight.vim', {'on':  'Limelight'}
-  let g:YouCompleteMe_install = '/usr/bin/python3 venv --copies venv; source venv/bin/activate; ./install.py'
+  let g:YouCompleteMe_install = '/usr/bin/python3 -m venv --copies venv; source venv/bin/activate; ./install.py'
   Plug 'valloric/YouCompleteMe', {'do': g:YouCompleteMe_install}
   Plug 'vim-scripts/AnsiEsc.vim'
   Plug 'junegunn/rainbow_parentheses.vim'
