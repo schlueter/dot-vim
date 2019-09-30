@@ -9,7 +9,6 @@ call plug#begin()
   " Language plugins
   Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
   Plug 'eagletmt/neco-ghc'
-  Plug 'eagletmt/ghcmod-vim'
   Plug 'Glench/Vim-Jinja2-Syntax'
   Plug 'dense-analysis/ale'
   Plug 'Glench/Vim-Jinja2-Syntax'
