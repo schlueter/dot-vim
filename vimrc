@@ -1,8 +1,6 @@
 call plug#begin()
 
   " colorscheme plugins
-  Plug 'bluz71/vim-moonfly-colors'
-  Plug 'sjl/badwolf'
   Plug 'altercation/vim-colors-solarized'
   Plug 'junegunn/seoul256.vim'
 

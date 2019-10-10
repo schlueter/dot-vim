@@ -2,7 +2,7 @@ syntax enable
 set background=dark
 
 let g:default_colorscheme = 'seoul256'
-let g:python_colorscheme = 'seoul256'
+"let g:python_colorscheme = 'seoul256'
 
 try
     execute "colorscheme " . g:default_colorscheme
