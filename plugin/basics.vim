@@ -15,6 +15,7 @@ set nolist listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
 set nobackup noswapfile
 set pastetoggle=<F3>
 set undolevels=1000
+set mouse=a
 
 set visualbell errorbells
 set wrap
