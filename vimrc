@@ -19,8 +19,6 @@ call plug#begin()
   Plug 'vim-airline/vim-airline-themes'
   Plug 'junegunn/goyo.vim', {'on': 'Goyo'}
   Plug 'junegunn/limelight.vim', {'on':  'Limelight'}
-  let g:YouCompleteMe_install = '/usr/bin/python3 -m venv --copies venv; source venv/bin/activate; ./install.py'
-"  Plug 'valloric/YouCompleteMe', {'do': g:YouCompleteMe_install}
   Plug 'vim-scripts/AnsiEsc.vim'
   Plug 'junegunn/rainbow_parentheses.vim'
 
@@ -48,9 +46,6 @@ call plug#begin()
 
   Plug 'hsanson/vim-android'
   Plug 'Shougo/vimproc.vim'
-
-  "Plug 'scrooloose/syntastic'
-  "Plug 'rooprob/vim-behave'
 
 call plug#end()
 
