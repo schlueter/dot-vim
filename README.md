@@ -16,7 +16,8 @@ My vim configuration. I set up this repository to more easily track my configura
 
 1) Install the plugins:
 
-        vim -c :PlugInstall
+        vim -c :PlugInstall -c ':mkspell! spell/*.add'
+
 
 ## Requirements
 
