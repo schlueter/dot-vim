@@ -11,6 +11,7 @@ set hlsearch
 set incsearch
 set showmatch
 set laststatus=2
+set mouse=a
 set nolist listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
 set nobackup noswapfile
 set pastetoggle=<F3>
