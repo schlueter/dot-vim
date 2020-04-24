@@ -9,7 +9,6 @@ call plug#begin()
   Plug 'eagletmt/neco-ghc'
   Plug 'Glench/Vim-Jinja2-Syntax'
   Plug 'dense-analysis/ale'
-  Plug 'Glench/Vim-Jinja2-Syntax'
   Plug 'ekalinin/Dockerfile.vim'
   Plug 'smerrill/vcl-vim-plugin'
   Plug 'martinda/Jenkinsfile-vim-syntax'
