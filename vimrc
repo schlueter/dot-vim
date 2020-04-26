@@ -6,12 +6,12 @@ call plug#begin()
 
   " Language plugins
   Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
-  Plug 'eagletmt/neco-ghc'
   Plug 'Glench/Vim-Jinja2-Syntax'
   Plug 'dense-analysis/ale'
   Plug 'ekalinin/Dockerfile.vim'
   Plug 'smerrill/vcl-vim-plugin'
   Plug 'martinda/Jenkinsfile-vim-syntax'
+  Plug 'bitc/vim-hdevtools'
 
   " Vim experience plugins
   Plug 'vim-airline/vim-airline'
