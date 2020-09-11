@@ -20,7 +20,7 @@ call plug#begin()
   Plug 'junegunn/limelight.vim', {'on':  'Limelight'}
   Plug 'vim-scripts/AnsiEsc.vim'
   Plug 'junegunn/rainbow_parentheses.vim'
-
+  Plug 'junegunn/vim-peekaboo'
   Plug 'vim-scripts/nginx.vim'
   Plug 'pearofducks/ansible-vim'
   Plug 'schlueter/ruby.vim'
