@@ -12,6 +12,7 @@ call plug#begin()
   Plug 'smerrill/vcl-vim-plugin'
   Plug 'martinda/Jenkinsfile-vim-syntax'
   Plug 'bitc/vim-hdevtools'
+  Plug 'vim-python/python-syntax'
 
   " Vim experience plugins
   Plug 'vim-airline/vim-airline'
