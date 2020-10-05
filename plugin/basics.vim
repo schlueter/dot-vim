@@ -7,22 +7,18 @@ set hidden
 " Command line history
 set history=1000
 
-set hlsearch
-set incsearch
-set showmatch
+set hlsearch incsearch showmatch
 set laststatus=2
 set mouse=a
 set nolist listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
 set nobackup noswapfile
 set pastetoggle=<F3>
 set undolevels=1000
-set mouse=a
-
 set visualbell errorbells
-set wrap
-set linebreak
-set breakindent
-set breakindentopt=shift:1
+
+" Long line handling
+set wrap linebreak breakindent breakindentopt=shift:1
 let &showbreak = '⏎  '
 
+" Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
