@@ -42,3 +42,4 @@ vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 " Enable sytax highlighting within ``` blocks in markdown
 let g:markdown_fenced_languages = ['html', 'python', 'ruby', 'vim', 'sh', 'yaml', 'groovy']
+cmap Xa xa
