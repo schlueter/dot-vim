@@ -17,4 +17,4 @@ function! s:isAnsibleHosts()
 endfunction
 
 "autocmd BufNewFile,BufRead * if s:isAnsible() | set ft=ansible | endif
-autocmd BufNewFile,BufRead * if s:isAnsibleHosts() | set ft=ansible_hosts | endif
+au BufNewFile,BufRead * if s:isAnsibleHosts() | set ft=ansible_hosts | endif

@@ -8,17 +8,20 @@ set expandtab tabstop=4 shiftwidth=4
 set hidden
 
 " Command line history
-set history=1000
+set history=999
 
 " Search behaviour
 set hlsearch incsearch showmatch
+
+" Keep cursor centered
+set scrolloff=999
 
 set laststatus=2
 set mouse=a
 set nolist listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
 set nobackup noswapfile
 set pastetoggle=<F3>
-set undolevels=1000
+set undolevels=999
 set visualbell errorbells
 
 " Long line handling

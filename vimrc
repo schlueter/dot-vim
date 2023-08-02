@@ -16,6 +16,7 @@ call plug#begin()
   "Plug 'mrk21/yaml-vim'
   "Plug 'stephpy/vim-yaml' "
   Plug 'rodjek/vim-puppet'
+  Plug 'hashivim/vim-terraform'
 
   " Vim experience plugins
   Plug 'vim-airline/vim-airline'
