@@ -13,8 +13,8 @@ set history=999
 " Search behaviour
 set hlsearch incsearch showmatch
 
-" Keep cursor centered
-set scrolloff=999
+" Keep lines visible around the cursor
+set scrolloff=10
 
 set laststatus=2
 set mouse=a
