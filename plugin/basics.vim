@@ -19,10 +19,14 @@ set scrolloff=10
 set laststatus=2
 set mouse=a
 set nolist listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
-set backup swapfile
 set pastetoggle=<F3>
 set undolevels=999
 set visualbell errorbells
+
+" File edit backup
+set backup swapfile
+set backupdir=~/vimtmp//,.
+set directory=~/vimtmp//,.
 
 " Long line handling
 set wrap linebreak breakindent breakindentopt=shift:1
