@@ -1,8 +1,7 @@
 call plug#begin()
 
-  " colorscheme plugins
-  Plug 'altercation/vim-colors-solarized'
-  Plug 'junegunn/seoul256.vim'
+  " Colorscheme
+  Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 
   " Language plugins
   Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
