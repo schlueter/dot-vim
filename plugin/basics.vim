@@ -25,8 +25,8 @@ set visualbell errorbells
 
 " File edit backup
 set backup swapfile
-set backupdir=~/vimtmp//,.
-set directory=~/vimtmp//,.
+set backupdir=~/.vimtmp//,.
+set directory=~/.vimtmp//,.
 
 " Long line handling
 set wrap linebreak breakindent breakindentopt=shift:1
