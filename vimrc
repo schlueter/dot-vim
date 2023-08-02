@@ -22,6 +22,9 @@ call plug#begin()
   Plug 'vim-scripts/AnsiEsc.vim'
   Plug 'junegunn/rainbow_parentheses.vim'
   Plug 'junegunn/vim-peekaboo'
+  Plug 'ap/vim-css-color'
+  Plug 'blueyed/vim-diminactive'
+
   Plug 'vim-scripts/nginx.vim'
   Plug 'pearofducks/ansible-vim'
   Plug 'schlueter/ruby.vim'
