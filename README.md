@@ -22,4 +22,3 @@ My vim configuration. I set up this repository to more easily track my configura
 ## Requirements
 
 Node and npm are used during plugin installation to install a markdown server for the [Instant Markdown](https://github.com/suan/vim-instant-markdown) plugin.
-

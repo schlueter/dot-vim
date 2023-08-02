@@ -13,6 +13,9 @@ call plug#begin()
   Plug 'martinda/Jenkinsfile-vim-syntax'
   Plug 'bitc/vim-hdevtools'
   Plug 'vim-python/python-syntax'
+  "Plug 'mrk21/yaml-vim'
+  "Plug 'stephpy/vim-yaml' "
+  Plug 'rodjek/vim-puppet'
 
   " Vim experience plugins
   Plug 'vim-airline/vim-airline'
@@ -26,7 +29,8 @@ call plug#begin()
   Plug 'blueyed/vim-diminactive'
 
   Plug 'vim-scripts/nginx.vim'
-  Plug 'pearofducks/ansible-vim'
+  "Plug 'pearofducks/ansible-vim'
+  Plug 'schlueter/ansible-vim'
   Plug 'schlueter/ruby.vim'
   Plug 'schlueter/zsh-ft.vim'
   Plug 'suan/vim-instant-markdown', {'do': 'npm -g install instant-markdown-d'}
