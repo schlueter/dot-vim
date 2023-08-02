@@ -19,7 +19,7 @@ set scrolloff=10
 set laststatus=2
 set mouse=a
 set nolist listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
-set nobackup noswapfile
+set backup swapfile
 set pastetoggle=<F3>
 set undolevels=999
 set visualbell errorbells
