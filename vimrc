@@ -1,4 +1,6 @@
 call plug#begin()
+  " Testing
+  Plug 'rickhowe/diffchar.vim'
 
   " Colorscheme
   Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
