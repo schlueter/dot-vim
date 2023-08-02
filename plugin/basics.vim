@@ -24,9 +24,11 @@ set undolevels=999
 set visualbell errorbells
 
 " File edit backup
-set backup swapfile
-set backupdir=~/.vimtmp//,.
-set directory=~/.vimtmp//,.
+set nobackup swapfile
+set backupdir=~/.vimtmp/backup//
+set directory=~/.vimtmp/swap//
+call mkdir(&directory, "p", 0o700)
+call mkdir(&backupdir, "p", 0o700)
 
 " Long line handling
 set wrap linebreak breakindent breakindentopt=shift:1
