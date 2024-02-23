@@ -1,6 +1,7 @@
 call plug#begin()
   " Testing
   Plug 'rickhowe/diffchar.vim'
+  Plug 'pedrohdz/vim-yaml-folds'
 
   " Colorscheme
   Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
