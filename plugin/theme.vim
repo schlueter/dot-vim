@@ -1,7 +1,7 @@
 syntax enable
 set background=dark
 
-let g:default_colorscheme = 'spaceduck'
+let g:default_colorscheme = 'habamax'
 
 try
     execute "colorscheme " . g:default_colorscheme
