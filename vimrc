@@ -56,6 +56,7 @@ call plug#begin()
 
   Plug 'hsanson/vim-android'
   Plug 'Shougo/vimproc.vim'
+  Plug 'github/copilot.vim'
 
 call plug#end()
 
