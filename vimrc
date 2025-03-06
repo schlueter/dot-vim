@@ -58,6 +58,9 @@ call plug#begin()
   Plug 'Shougo/vimproc.vim'
   Plug 'github/copilot.vim'
 
+  " Plugins in testing
+  Plug 'google/vim-jsonnet'
+
 call plug#end()
 
 filetype plugin indent on
