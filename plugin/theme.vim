@@ -1,7 +1,7 @@
 syntax enable
-set background=dark
+set background=light
 
-let g:default_colorscheme = 'habamax'
+let g:default_colorscheme = 'murphy'
 
 try
     execute "colorscheme " . g:default_colorscheme
