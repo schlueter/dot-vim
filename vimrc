@@ -8,12 +8,12 @@ call plug#begin()
 
   " Language plugins
   Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
-  Plug 'Glench/Vim-Jinja2-Syntax'
+"  Plug 'Glench/Vim-Jinja2-Syntax'
   Plug 'dense-analysis/ale'
   Plug 'ekalinin/Dockerfile.vim'
   Plug 'smerrill/vcl-vim-plugin'
   Plug 'martinda/Jenkinsfile-vim-syntax'
-  Plug 'bitc/vim-hdevtools'
+"  Plug 'bitc/vim-hdevtools'
   Plug 'vim-python/python-syntax'
   "Plug 'mrk21/yaml-vim'
   "Plug 'stephpy/vim-yaml' "
@@ -36,7 +36,7 @@ call plug#begin()
   Plug 'schlueter/ansible-vim'
   Plug 'schlueter/ruby.vim'
   Plug 'schlueter/zsh-ft.vim'
-  Plug 'suan/vim-instant-markdown', {'do': 'npm -g install instant-markdown-d'}
+  Plug 'instant-markdown/vim-instant-markdown', {'do': 'npm install'}
   Plug 'vim-scripts/bats.vim'
   Plug 'vimperator/vimperator.vim'
 
@@ -54,12 +54,16 @@ call plug#begin()
   Plug 'tpope/vim-tbone'
   Plug 'vim-scripts/ReplaceWithRegister'
 
-  Plug 'hsanson/vim-android'
+  "Plug 'hsanson/vim-android'
   Plug 'Shougo/vimproc.vim'
   Plug 'github/copilot.vim'
 
   " Plugins in testing
   Plug 'google/vim-jsonnet'
+  Plug 'bazelbuild/vim-ft-bzl'
+"  "Plug 'autozimu/LanguageClient-neovim'
+  Plug 'Saghen/blink.cmp'
+  Plug 'cappyzawa/starlark.vim'
 
 call plug#end()
 
