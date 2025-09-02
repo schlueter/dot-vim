@@ -20,7 +20,7 @@ set laststatus=2
 set mouse=a
 set number
 set nolist listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
-set pastetoggle=<F3>
+
 set undolevels=999
 set visualbell errorbells
 
@@ -44,3 +44,8 @@ vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 " Enable sytax highlighting within ``` blocks in markdown
 let g:markdown_fenced_languages = ['html', 'python', 'ruby', 'vim', 'sh', 'yaml', 'groovy']
 cmap Xa xa
+
+if has('nvim')
+else
+    set pastetoggle=<F3>
+endif
