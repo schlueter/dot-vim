@@ -18,6 +18,7 @@ set scrolloff=10
 
 set laststatus=2
 set mouse=a
+set number
 set nolist listchars=tab:>-,trail:~,extends:>,precedes:<,nbsp:%
 set pastetoggle=<F3>
 set undolevels=999
