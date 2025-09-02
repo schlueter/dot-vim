@@ -32,8 +32,8 @@ call mkdir(&directory, "p", 0o700)
 call mkdir(&backupdir, "p", 0o700)
 
 " Long line handling
-set wrap linebreak breakindent breakindentopt=shift:1
-let &showbreak = '⏎  '
+set wrap linebreak breakindent breakindentopt=shift:0
+let &showbreak = '⏎ '
 
 " Remove trailing whitespace from all lines on save
 autocmd BufWritePre * :%s/\s\+$//e
