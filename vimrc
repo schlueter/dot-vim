@@ -1,8 +1,4 @@
 call plug#begin()
-  " Testing
-  Plug 'rickhowe/diffchar.vim'
-  Plug 'pedrohdz/vim-yaml-folds'
-
   " Colorscheme
   Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 
@@ -19,6 +15,7 @@ call plug#begin()
   "Plug 'stephpy/vim-yaml' "
   Plug 'rodjek/vim-puppet'
   Plug 'hashivim/vim-terraform'
+  Plug 'google/vim-jsonnet'
 
   " Vim experience plugins
   Plug 'vim-airline/vim-airline'
@@ -58,12 +55,16 @@ call plug#begin()
   Plug 'Shougo/vimproc.vim'
   Plug 'github/copilot.vim'
 
-  " Plugins in testing
-  Plug 'google/vim-jsonnet'
+  " Testing
   Plug 'bazelbuild/vim-ft-bzl'
-"  "Plug 'autozimu/LanguageClient-neovim'
   Plug 'Saghen/blink.cmp'
   Plug 'cappyzawa/starlark.vim'
+
+  Plug 'rickhowe/diffchar.vim'
+  Plug 'pedrohdz/vim-yaml-folds'
+  "Plug 'folke/sidekick.nvim'
+  "Plug 'autozimu/LanguageClient-neovim'
+
 
 call plug#end()
 

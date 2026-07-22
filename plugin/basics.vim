@@ -1,5 +1,5 @@
 " Set clipboard for integration to system clipboard
-set clipboard=unnamed
+set clipboard+=unnamedplus
 
 " Handle tabs
 set expandtab tabstop=4 shiftwidth=4
@@ -40,6 +40,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Search for selected text with //
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+
+" Session management
+set shada='1000,f1,<500,:99,@99,/99,%99
 
 " Enable sytax highlighting within ``` blocks in markdown
 let g:markdown_fenced_languages = ['html', 'python', 'ruby', 'vim', 'sh', 'yaml', 'groovy']
