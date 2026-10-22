@@ -4,12 +4,12 @@ call plug#begin()
 
   " Language plugins
   Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
-"  Plug 'Glench/Vim-Jinja2-Syntax'
+  "Plug 'Glench/Vim-Jinja2-Syntax'
   Plug 'dense-analysis/ale'
   Plug 'ekalinin/Dockerfile.vim'
   Plug 'smerrill/vcl-vim-plugin'
   Plug 'martinda/Jenkinsfile-vim-syntax'
-"  Plug 'bitc/vim-hdevtools'
+  "Plug 'bitc/vim-hdevtools'
   Plug 'vim-python/python-syntax'
   "Plug 'mrk21/yaml-vim'
   "Plug 'stephpy/vim-yaml' "

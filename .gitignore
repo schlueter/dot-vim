@@ -4,3 +4,4 @@
 /.netrwhist
 /autoload/plug.vim*
 /spell/*.spl
+plugin/local.vim
